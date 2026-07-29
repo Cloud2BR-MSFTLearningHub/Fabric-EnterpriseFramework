@@ -1,0 +1,64 @@
+site_name: Microsoft Fabric Enterprise Framework
+site_description: Learning hub for designing and operating a well-architected Microsoft Fabric enterprise data platform.
+site_url: https://cloud2br-msftlearninghub.github.io/Fabric-EnterpriseFramework/
+repo_url: https://github.com/Cloud2BR-MSFTLearningHub/Fabric-EnterpriseFramework
+repo_name: Cloud2BR-MSFTLearningHub/Fabric-EnterpriseFramework
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+copyright: Copyright &copy; 2026 <a href="https://github.com/Cloud2BR-MSFTLearningHub" target="_blank" rel="noopener">Cloud2BR OSS - Learning Hub</a>
+
+theme:
+  name: material
+  logo: https://avatars.githubusercontent.com/u/195347873?v=4
+  favicon: https://avatars.githubusercontent.com/u/195347873?v=4
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.highlight
+  - pymdownx.snippets:
+      base_path:
+        - .
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/css/custom.css
+extra_javascript:
+  - assets/js/logo-link.js
+  - assets/js/external-links.js
+  - path: assets/js/mermaid.js
+    type: module
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Cloud2BR-MSFTLearningHub
+      name: Cloud2BR OSS - Learning Hub
+
+nav:
+  - Home: index.md
+  - Platform foundations: platform-foundations.md
+  - Govern and secure: govern-and-secure.md
+  - Deliver with confidence: deliver-with-confidence.md
+  - Observe and optimize: observe-and-optimize.md
